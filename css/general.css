@@ -1,0 +1,125 @@
+/* GENEREL.CSS - Farver, fonte og styling */
+
+/* FONTE: Inter (overskrifter) + Crimson Pro (tekst) */
+/* FARVER: #2563eb (blå), #1e293b (tekst), #0ea5e9 (links), #f8fafc (baggrund) */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Crimson+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #1e293b;
+    background-color: #f8fafc;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    color: #2563eb;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 50px 0 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 25px 0 15px;
+    color: #0ea5e9;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    
+}
+.images .old-image img {
+    margin-top: 300px; /* rykkes længere ned på desktop */
+}
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+ul {
+    margin: 0 0 25px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0ea5e9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 80px;
+    border-top: 2px solid #e2e8f0;
+    color: #64748b;
+}
+
+/* Definition list styling */
+dl {
+    margin: 20px 0;
+}
+
+dt {
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+
+dd {
+    margin: 0 0 15px 0;
+    color: #1e293b;
+}
+
+/* --- CTA BUTTON --- */
+.cta-btn {
+    display: inline-block;
+    padding: 12px 10px;
+    background-color: #1e90ff;
+    color: white;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #1565c0;
+    cursor: pointer;
+}

@@ -1,0 +1,157 @@
+/* --- Generelt --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h1 {
+text-align: center;
+background-color: navy;
+color: white;
+
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Main og sektioner --- */
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* --- Figur og billeder --- */
+figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;       /* fylder max container bredde */
+    height: auto;          /* beholder proportioner */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;        /* centrerer i figure */
+    object-fit: cover;     /* undgår deformering */
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* --- Galleri grid --- */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.gallery figure {
+    margin: 0; /* fjerner ekstra margin i grid */
+    width: 100%;
+    max-width: 400px;
+}
+.gallery img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+display: block;
+}
+
+/* --- Footer --- */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* --- Responsivt --- */
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+  img {
+    height: auto;
+  }
+}
+/* CTA BUTTON */
+.cta-btn {
+    display: inline-block;
+    margin: 1em;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: lightskyblue;
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+}
+.cta-btn:hover {
+    background-color: #1e40af;
+}
+
+img{
+    max-width: 100%;       
+    height: auto;      
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;       
+    object-fit: cover;
+}
+dt{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: darkred;
+font-size: 1.2rem;
+font-weight: 700;
+
+}
